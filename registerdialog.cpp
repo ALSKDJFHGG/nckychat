@@ -6,7 +6,9 @@ registerDialog::registerDialog(QWidget *parent) :
     ui(new Ui::registerDialog)
 {
     ui->setupUi(this);
-    connect(ui->backButton, &QPushButton::clicked, this, &registerDialog::backLogin);
+    ui->pwdEdit->setEchoMode(QLineEdit::Password);
+    ui->repwdEdit->setEchoMode(QLineEdit::Password);
+    //connect(ui->backButton, &QPushButton::clicked, this, &registerDialog::backLogin);
 }
 
 registerDialog::~registerDialog()
