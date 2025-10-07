@@ -1,6 +1,13 @@
-QDialog {
-    background-color:rgb(255,255,255)
+QDialog#loginDialog, #registerDialog {
+    background-color: white;
+}
+QLineEdit {
+    color: black;
+    background-color: white;
 }
 QLabel {
-    color:rgb(0,0,0)
+    color: black;
 }
+
+#error_tip[state="normal"] { color: green; }
+#error_tip[state="error"] { color: red; }
